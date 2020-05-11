@@ -6,7 +6,6 @@ import datetime
 #python timezone.py 8.23 pdt eest
 
 def main():
-    print(sys.argv)
     if len(sys.argv) != 4:
             print('Incorrect amount of arguments.')
             sys.exit(1)
@@ -27,8 +26,10 @@ def main():
             time_dif_m = float(split_time[1])
 
         target_time = target_time + datetime.timedelta(hours=time_dif_h, minutes=time_dif_m)
+    
+    to_print = sys.argv[1] + ' ' + sys.argv[2].upper() + ' is ' + target_time.strftime('%H.%M') + ' ' + sys.argv[3].upper()
 
-    print(target_time.strftime('%H.%M'))
+    print(to_print)
 
 
 
