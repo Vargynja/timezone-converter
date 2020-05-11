@@ -48,7 +48,7 @@
     <br />
     <a href="https://github.com/Vargynja/timezone-converter">View Demo</a>
     ·
-    <a href="https://github.com/Vargynja/timezone-converter/issues">timezone-converterrt Bug</a>
+    <a href="https://github.com/Vargynja/timezone-converter/issues">Report Bug</a>
     ·
     <a href="https://github.com/Vargynja/timezone-converter/issues">Request Feature</a>
   </p>
