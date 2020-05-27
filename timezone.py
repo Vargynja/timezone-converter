@@ -50,7 +50,7 @@ def get_utc_time(timezones):
             entered_time = datetime.datetime.strptime(sys.argv[1], '%H.%M')
             #split utc time zone to hours and minutes in case of time zones with minutes
             split_time = utc_time_dif.split('.')
-            time_dif_h = float(split_time[0])
+            time_dif_h = 0 - float(split_time[0])
             time_dif_m = 0
             #check if there was a split before trying to get minutes
             if len(split_time) is 2:
