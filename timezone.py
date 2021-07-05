@@ -29,7 +29,7 @@ def main():
         time_dif_h = float(split_time[0])
         time_dif_m = 0
         #check if there was a split before trying to get minutes
-        if len(split_time) is 2:
+        if len(split_time) == 2:
             time_dif_m = float(split_time[1])
 
         #apply timezone time difference
@@ -53,7 +53,7 @@ def get_utc_time(timezones):
             time_dif_h = 0 - float(split_time[0])
             time_dif_m = 0
             #check if there was a split before trying to get minutes
-            if len(split_time) is 2:
+            if len(split_time) == 2:
                 time_dif_m = float(split_time[1])
         
             #apply timezone time difference
